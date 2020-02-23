@@ -1,0 +1,12 @@
+<h2>Position of points on map:</h2>
+<p>4 3<br/>
+1 2</p>
+<br/>
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <table border="1">
+        {{ form }}
+    </table>
+    <input type="submit" value="Calibrate">
+</form>
